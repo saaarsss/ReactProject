@@ -20,7 +20,7 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <ComponentePrueba/>,
+  <ComponentePrueba nombre="sara" edad="18" genero="Famme"/>,
   document.getElementById('root')
 );
 // If you want to start measuring performance in your app, pass a function
