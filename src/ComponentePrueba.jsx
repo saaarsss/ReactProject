@@ -12,7 +12,7 @@ const ComponentePrueba = ({nombre, edad, genero}) =>(
      <>
         <div className="card" style={ {width:'18rem;'}}>
              <div class="card-body">
-             <h5 class="card-title">{nombre ? nombre : "nombre no asignado"}</h5>
+             <h5 class="card-title">{nombre }</h5>
                 <p className="card-text">edad: { edad }</p>
                 <p className="card-text">genero: { genero }</p>
               </div>    

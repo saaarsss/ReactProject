@@ -7,6 +7,7 @@ import NewComponent from './NewComponent';
 import Header from './Header';
 import Footer from './Footer';
 import ComponentePrueba from './ComponentePrueba';
+import Contenedor from './Contenedor';
 
 
 ReactDOM.render(
@@ -19,8 +20,13 @@ ReactDOM.render(
   document.getElementById('footer')
 );
 
+// ReactDOM.render(
+//   <ComponentePrueba nombre="sara" edad="18" genero="Femme"/>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  <ComponentePrueba nombre="sara" edad="18" genero="Famme"/>,
+  <Contenedor/>,
   document.getElementById('root')
 );
 // If you want to start measuring performance in your app, pass a function

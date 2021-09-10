@@ -2,11 +2,12 @@
 import React from "react";
 //se llama igual que el componente
 const Header = () => (
-    <div>
-        <header>
-            <h1>Aplicacion </h1>
-        </header>
-    </div>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-md">
+            <a className="navbar-brand" href='#'>Estudiantes App</a>
+        </div>
+    </nav>
+
 );
 
 export default Header ;
