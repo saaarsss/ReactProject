@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1>titulo desde componente</h1>
+        <h3>saaarsss</h3>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
