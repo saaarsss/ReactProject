@@ -8,6 +8,7 @@ import Header from './Header';
 import Footer from './Footer';
 import ComponentePrueba from './ComponentePrueba';
 import Contenedor from './Contenedor';
+import ContenedorPersonaje from './ContenedorPersonaje';
 
 
 ReactDOM.render(
@@ -25,10 +26,17 @@ ReactDOM.render(
 //   document.getElementById('root')
 // );
 
+// ReactDOM.render(
+//   <Contenedor/>,
+//   document.getElementById('root')
+// );
+
 ReactDOM.render(
-  <Contenedor/>,
-  document.getElementById('root')
+  <ContenedorPersonaje/>,
+  document.getElementById('root3')
 );
+
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals

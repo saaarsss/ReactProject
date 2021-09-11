@@ -3,9 +3,9 @@ import React from "react";
 const Footer = ()=> (
     <div>
         <footer>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-black bg-black">
         <div className="container-md">
-            <a className="navbar-brand" href='#'>Footer App</a>
+            <a className="navbar-brand" href='#'>Estos son los personajes de la serie stranger things para mas info dale click a PERSONAJES stranger things</a>
         </div>
     </nav>
         </footer>
