@@ -24,7 +24,7 @@ class Formulario extends Component{
                 <h1>
                     <form action="">
                         <label htmlFor="">Nombre</label><br/>
-                        <input type="text" onChange={this.cambiarNombre} />><br/>
+                        <input type="text" onChange={this.cambiarNombre} /><br/>
                         <input type= "submit" value="Enviar"/><br/>
                     
                     </form>
