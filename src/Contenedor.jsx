@@ -1,5 +1,6 @@
 import React from "react";
 import Estudiante from "./Estudiante";
+import Formulario from "./Formulario";
 
 const Estudiantes  = [
     {
@@ -46,8 +47,11 @@ const Contenedor = () =>(
       {
           //pasando datos de forma dinamica
           //va a iterar e imprimir 6 estudiantes
-          Estudiantes.map( c => <Estudiante nombre={c.nombre} edad={c.edad} genero={c.genero}/>)
+          //Estudiantes.map( c => <Estudiante nombre={c.nombre} edad={c.edad} genero={c.genero}/>)
       }
+
+        <Formulario/>
+
      </>
 );
 export default Contenedor;
