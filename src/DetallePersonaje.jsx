@@ -1,4 +1,5 @@
-import React from "react";
+import react from "react";
+import { Link } from "react-router-dom";
 import Personaje from "./Personaje";
 import Once1 from './assets/img/Once1.PNG';
 import Mike from './assets/img/Mike.PNG';
@@ -8,8 +9,6 @@ import Dustin from './assets/img/Dustin.jpg';
 import Lucas from './assets/img/Lucas.jpg';
 import Nancy from './assets/img/Nancy.jpg';
 import Jonathan from './assets/img/Jonathan.jpg';
-
-
 
 const Personajes  = [
     {
@@ -89,14 +88,33 @@ const Personajes  = [
     
 ]
 
-const ContenedorPersonaje = () =>(
-//estructura de contenedor estandar 
-     <>
-      {
-          //pasando datos de forma dinamica
-          //va a iterar e imprimir 6 estudiantes
-          Personajes.map( c => <Personaje imagen={c.imagen}nombre={c.nombre} edad={c.edad} genero={c.genero} papel={c.papel}  id={c.id}/>)
-      }
+
+const DetallePersonaje= ({match}) => {
+
+
+    let personaje = Personajes.filter(c => c.id === parseInt(match.params.id))[0]
+    return (
+        <>
+        {
+            personaje ? (
+                <div className="card col-md-4" style={ {width:'18rem;'}}>
+                    <div class="card-body">
+                    <p className="image"> { personaje.imagen }</p>
+                    <h5 className="card-title">{ personaje.nombre }</h5>
+                        <p className="card-text">edad: { personaje.edad }</p>
+                        <p className="card-text">genero: { personaje.genero }</p>
+                        <p className="card-text">papel: { personaje.papel }</p>
+                        
+                    </div>    
+                </div>
+
+            ):
+            <h1>Personaje no encontrado</h1>
+        }
+
+          <Link to={`/Personaje`}>Ver Todos</Link>    
      </>
-);
-export default ContenedorPersonaje;
+    )
+};
+
+export default DetallePersonaje;

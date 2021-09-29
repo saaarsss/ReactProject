@@ -4,36 +4,42 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NewComponent from './NewComponent';
-import Header from './Header';
+
 import Footer from './Footer';
 import ComponentePrueba from './ComponentePrueba';
 import Contenedor from './Contenedor';
 import ContenedorPersonaje from './ContenedorPersonaje';
 
 
+// ReactDOM.render(
+//   <Header/>,
+//   document.getElementById('header')
+// );
+
+// ReactDOM.render(
+//   <Footer/>,
+//   document.getElementById('footer')
+// );
+
+// // ReactDOM.render(
+// //   <ComponentePrueba nombre="sara" edad="18" genero="Femme"/>,
+// //   document.getElementById('root')
+// // );
+
+// // ReactDOM.render(
+// //   <Contenedor/>,
+// //   document.getElementById('root')
+// // );
+
+// ReactDOM.render(
+//   <ContenedorPersonaje/>,
+//   document.getElementById('root3')
+// );
+
+
 ReactDOM.render(
-  <Header/>,
+  <App/>,
   document.getElementById('header')
-);
-
-ReactDOM.render(
-  <Footer/>,
-  document.getElementById('footer')
-);
-
-// ReactDOM.render(
-//   <ComponentePrueba nombre="sara" edad="18" genero="Femme"/>,
-//   document.getElementById('root')
-// );
-
-// ReactDOM.render(
-//   <Contenedor/>,
-//   document.getElementById('root')
-// );
-
-ReactDOM.render(
-  <ContenedorPersonaje/>,
-  document.getElementById('root3')
 );
 
 

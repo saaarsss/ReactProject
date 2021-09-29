@@ -1,20 +1,20 @@
 import React, {Component} from "react";
 //componente de clase
-class Formulario extends Component{
+class FormularioPersonaje extends Component{
 
     constructor(props){
         super(props)
 
         this.state = {
-            nombre: "nombre state"
+                nombre: "nombre state"
         }
-
+   
         this.cambiarNombre = this.cambiarNombre.bind(this);
     }
 
-    cambiarNombre(e){
+    cambiarNombre(i){
         this.setState({
-            nombre: e.target.value
+            nombre: i.target.value
         });
     }
 
@@ -37,4 +37,5 @@ class Formulario extends Component{
 
 }
 
-export default Formulario;
+
+export default FormularioPersonaje;

@@ -1,27 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './Header';
+import Contenedor from './Contenedor';
+import Contacto from './Contacto';
+import Home from './Home';
+import FormularioPersonaje from './FormularioPersonaje';
+import ContenedorPersonaje from './ContenedorPersonaje';
+import Footer from './Footer';
+import DetallePersonaje from './DetallePersonaje';
+import MainMenu from './MainMenu';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>titulo desde componente</h1>
-        <h3>saaarsss</h3>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+    return (
+      <Router>
+        <MainMenu/>
+        <Route path="/" exact component={ Header } />
+        <Route path="/Personaje" exact component={ ContenedorPersonaje } />
+        <Route path="/contacto" exact component={ Contacto } />
+        <Route path="/Personaje/:id" exact component={ DetallePersonaje } />
+        <Route path="/Footer" exact component={ Footer } />
+        <Route path="/Header" exact component={ Header } />
+        <Route path="/home" exact component={ Home } />
+        <Route path="/FormularioP" exact component={ FormularioPersonaje } />
+      </Router>
+    )
 }
 
 export default App;

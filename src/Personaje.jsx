@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 //recibir los promps
-const Personaje = ({imagen, nombre, edad, genero, papel}) =>(
+const Personaje = ({imagen, nombre, edad, genero, papel,id}) =>(
 
         <>
            <div className="card col-md-4" style={ {width:'18rem;'}}>
@@ -12,6 +12,7 @@ const Personaje = ({imagen, nombre, edad, genero, papel}) =>(
                    <p className="card-text">edad: { edad }</p>
                    <p className="card-text">genero: { genero }</p>
                    <p className="card-text">papel: { papel }</p>
+                   <p><a href={`/personaje/${id} `}>Detalle:</a></p>
                  </div>    
            </div>
         </>
